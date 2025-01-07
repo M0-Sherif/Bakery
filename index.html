@@ -10,7 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="CSS/asss.css" />
   </head>
 
@@ -54,7 +59,7 @@
     <!-- ------------------------------ -->
     <!-- About start -->
     <div id="about">
-      <div class="container-about">
+      <div class="container">
         <img class="imgAbout" src="images/alexandru-stavrica.jpg" alt="" />
         <div class="about-content">
           <h2>Who we are?</h2>
@@ -115,16 +120,16 @@
 
     <!-- our baking start -->
     <div id="bak">
-      <div class="containar-bak">
+      <div class="container">
         <div class="he-bak">
-          <h1>Our Baking</h1>
+          <h3>Our Baking</h3>
           <p>
             Learn more about them. We have worked truly hard to make them
             perfect for every use.
           </p>
         </div>
-        <div class="parent">
-          <div class="bak-box">
+        <div class="parent row">
+          <div class="bak-box col-4">
             <img src="images/ben-garratt.jpg" alt="" />
             <div class="bak-contant">
               <h4>Superior Breads</h4>
@@ -135,7 +140,7 @@
               </p>
             </div>
           </div>
-          <div class="bak-box">
+          <div class="bak-box col-4">
             <img src="images/stas-ovsky.jpg" alt="" />
             <div class="bak-contant">
               <h4>Bagels</h4>
@@ -146,7 +151,7 @@
               </p>
             </div>
           </div>
-          <div class="bak-box">
+          <div class="bak-box col-4">
             <img src="images/clem-onojeghuo.jpg" alt="" />
             <div class="bak-contant">
               <h4>Cookies</h4>
@@ -165,42 +170,49 @@
 
     <!-- contant and map------------- -->
 
-    <!-- <div id="for">
-    <div class=" container container-for">
-   
-      <div class="for-content">
-        <h2>Contact Information</h2>
-        <p>
-          I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
-        </p>
+    <div id="for">
+      <div class="container">
+        <div class="row w-100">
+          <div class="for-content col-6">
+            <h2>Contact Information</h2>
+            <p>
+              I am text block. Click edit button to change this text. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+              luctus nec ullamcorper mattis, pulvinar dapibus leo
+            </p>
 
-        <div class="content-2">
-          <p>Our contact details:</p>
-          <p>
-            <img src="images/Icons/leaf.png" alt="" />Manchester St 123-78B, Random 713, UK
-          </p>
-          <p>
-            <img src="images/Icons/people.png" alt="" />+46 123 456 789
-          </p>
-          <p>
-            <img src="images/Icons/heart.png" alt="" /> +37 431 456 789
-          </p>
-          <p>
-            <img src="images/Icons/check.png" alt="" />hello@sitename.com
-            to create.
-          </p>
+            <div class="content-2">
+              <p>Our contact details:</p>
+              <p>
+                <img src="images/Icons/map.png" alt="" />Manchester St 123-78B,
+                Random 713, UK
+              </p>
+              <p><img src="images/Icons/phone.png" alt="" />+46 123 456 789</p>
+              <p>
+                <img src="images/Icons/headphone.png" alt="" /> +37 431 456 789
+              </p>
+              <p>
+                <img src="images/Icons/email.png" alt="" />hello@sitename.com to
+                create.
+              </p>
+            </div>
+            <div class="clear-fix"></div>
+          </div>
+
+          <div class="map col-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54586.84094397104!2d29.979549836865232!3d31.229661462565875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c38a0562fe85%3A0xa34cc632ec23e7!2z2YXZg9iq2KjYqSDYp9mE2KXYs9mD2YbYr9ix2YrYqQ!5e0!3m2!1sar!2seg!4v1733145442886!5m2!1sar!2seg"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <div class="clear-fix"></div>
-      </div>
-    
-
-
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54586.84094397104!2d29.979549836865232!3d31.229661462565875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c38a0562fe85%3A0xa34cc632ec23e7!2z2YXZg9iq2KjYqSDYp9mE2KXYs9mD2YbYr9ix2YrYqQ!5e0!3m2!1sar!2seg!4v1733145442886!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    
-  </div> -->
 
     <!-- 
 <div id="contact">
@@ -215,11 +227,13 @@
     </div>
   </div>
 </div> -->
-<div class="info-section">
+
+    <!-- edit no -->
+    <!-- <div class="info-section">
   <div class="content-info">
-      <h2>Contact Information</h2>
-      <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    <h2>Contact Information</h2>
+    <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
       <p>Our contact details:</p>
       <div class="contact-format">
           <img class="contact-icon" src="images/Icons/map.png" alt="">
@@ -232,17 +246,18 @@
       <div class="contact-format">
           <img class="contact-icon" src="images/Icons/headphone.png" alt="">
           <h3>+37 431 456 789</h3>
-      </div>
+        </div>
       <div class="contact-format">
-          <img class="contact-icon" src="images/Icons/email.png" alt="">
+        <img class="contact-icon" src="images/Icons/email.png" alt="">
           <h3>hello@sitename.com</h3>
+        </div>
       </div>
-  </div>
-  <iframe
+      <iframe
       src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6826.025444630365!2d29.9060524!3d31.1926606!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1732636130912!5m2!1sen!2sus"
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+    </div> -->
+    <!-- edit no -->
     <!-- ----------------------------- -->
 
     <div class="last-section">
@@ -336,5 +351,6 @@
  Our Baking
  
  Contact Information-->
+    <script src="JS/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@
 }
 
 #header .container-header {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -33,6 +33,8 @@
     line-height: 32px;
     font-weight: 400;
     text-transform: capitalize;
+    text-decoration: none;
+    /* added again because it didn't work in (*) */
 }
 
 #nav img {
@@ -123,7 +125,12 @@
     color: black;
 }
 
-.button-p {
+#header-button p {
+    margin-bottom: 0;
+    /* added becouse margin of bootstrap */
+}
+
+#header-button .button-p {
     font-size: 16px;
     font-weight: 700;
     line-height: 22.1px;
@@ -137,7 +144,7 @@
     font-family: "Alegreya", serif;
 }
 
-#about .container-about {}
+
 
 #about .imgAbout {
     width: 40%;
@@ -157,7 +164,7 @@
     font-size: 32px;
     line-height: 44.16px;
     font-weight: 400;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     margin-bottom: 20px;
 }
 
@@ -177,6 +184,12 @@
     margin-top: 30px;
     float: left;
     line-height: 31px;
+}
+
+#about .content-2 p img {
+    border: #8E7754 solid 1px;
+    border-radius: 25px;
+    margin-right: 10px;
 }
 
 /* our start  */
@@ -249,7 +262,7 @@
 }
 
 
-#bak .conatinar-bak .he-bak .h1 {
+#bak h3 {
     font-size: 30px;
     font-weight: 400;
     line-height: 41.4px;
@@ -264,49 +277,33 @@
     font-weight: 400;
 }
 
-.parent {
-    display: flex;
 
 
-}
 
-.bak-box {}
 
 #bak .bak-box img {
-    width: 70%;
+    width: 100%;
 }
 
-.bak-contant {
-    width: 60%;
-    padding-left: 150px;
-}
 
 /* --------------------------------------------------- */
 
 #for {
-    margin-top: 130px;
+    margin: 130px 0;
     font-family: "Alegreya", serif;
-    padding: 0 10%;
+    /* padding: 0 10%; */
     display: flex;
 }
 
-#for .container-about {}
-
-#for .about-content {
-    width: 50%;
-    margin-left: 10%;
-    font-size: 16px;
-    font-weight: 400;
-    float: left;
-    text-align: left;
-}
+#for .for-content {}
 
 #for h2 {
     font-size: 32px;
     line-height: 44.16px;
     font-weight: 400;
-    margin-top: 10%;
     margin-bottom: 20px;
+    color: #303030;
+
 }
 
 #for p {
@@ -327,34 +324,40 @@
     line-height: 31px;
 }
 
+#for .content-2 p img {
+    background-color: #8E7754;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
 #for .map {
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
-.conatinar-for{
-
-display: flex;
-justify-content: space-between;
-    padding-right: 20px;
-}
 
 
-.container{
-    width: 80%;
+
+
+.container {
+    width: 90%;
     margin: auto;
     /* background-color: #000; */
 }
-.container-contact{
+
+.container-contact {
     display: flex;
     justify-content: space-between;
 }
-.contact-img{
+
+.contact-img {
     width: 40%;
 }
-.contact-content{
+
+.contact-content {
     padding-top: 50px;
     width: 40%;
 }
+
 /* ---------------------------------------- */
 .info-section {
     padding-inline: 222px;
@@ -387,9 +390,11 @@ img.contact-icon {
     background-color: #8E7754;
     border-radius: 25px;
 }
+
 .contact-format h3 {
     font-size: 17px;
 }
+
 /* ---------------------------------------- */
 .last-section {
     text-align: center;
@@ -427,6 +432,7 @@ li {
     color: gray;
     list-style: none;
 }
+
 img.last-icon {
     width: 10%;
 }
@@ -488,24 +494,28 @@ hr {
     font-size: x-large;
     transition: all 1s;
 }
+
 .icon-facebook:hover {
     transition: 0.3s 0.1s linear(-0.42 42.35%, -0.15 11.34%, 0.28 70.56%, 0.68 8.99%, 1.33 93.33%);
     transition-timing-function: ease-in-out;
     background-color: #3B5998;
     color: white;
 }
+
 .icon-google-plus:hover {
     transition: 0.3s 0.1s linear(-0.42 42.35%, -0.15 11.34%, 0.28 70.56%, 0.68 8.99%, 1.33 93.33%);
     transition-timing-function: ease-in-out;
     background-color: #DD4B39;
     color: white;
 }
+
 .icon-linkedin:hover {
     transition: 0.3s 0.1s linear(-0.42 42.35%, -0.15 11.34%, 0.28 70.56%, 0.68 8.99%, 1.33 93.33%);
     transition-timing-function: ease-in-out;
     background-color: #007BB5;
     color: white;
 }
+
 .icon-twitter:hover {
     transition: 0.3s 0.1s linear(-0.42 42.35%, -0.15 11.34%, 0.28 70.56%, 0.68 8.99%, 1.33 93.33%);
     transition-timing-function: ease-in-out;
